@@ -1,0 +1,30 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+	//declarando variaveis
+	let quantidadeDeVitoria = prompt("quantas partidas vc venceu? ");
+	let quantidadeDeDerrota = prompt("quantas partidas vc perdeu? ");
+	
+	//declarando a função 
+	function saldo (quantidadeDeVitoria,quantidadeDeDerrota) {
+		let saldoDeRankeadas = (quantidadeDeVitoria - quantidadeDeDerrota);
+		
+		if (saldoDeRankeadas < 10) {
+		  return  "Ferro";
+		} else if (saldoDeRankeadas > 11 && saldoDeRankeadas <= 20) {
+		  return  "Bronze";
+		} else if (saldoDeRankeadas > 21 && saldoDeRankeadas <= 50) {
+		  return  "prata";
+		} else if (saldoDeRankeadas > 51 && saldoDeRankeadas <= 80) {
+		  return  "ouro";
+		} else if (saldoDeRankeadas > 81 && saldoDeRankeadas <= 90) {
+		  return  "diamente";
+		} else if (saldoDeRankeadas > 91 && saldoDeRankeadas <= 100) {
+		  return  "lendario";
+		} else  {
+		  return  "imortal";
+	  }
+	 }
+	 let resultadoDoSaldo = saldo(quantidadeDeVitoria,quantidadeDeDerrota); 
+	
+	alert (" De acordo com seu saldo de rankeada você é " + resultadoDoSaldo);
+</script>
