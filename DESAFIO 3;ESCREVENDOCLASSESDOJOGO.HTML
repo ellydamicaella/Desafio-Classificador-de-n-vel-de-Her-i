@@ -1,0 +1,38 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+	//definindo uma classe 
+	class Heroi {
+		//metodo construtor
+		constructor(nome, idade, tipo) {
+		this.nome = prompt("qual o nome do seu heroi? ");
+		this.idade = prompt("qual a idade dele? ");
+		this.tipo = prompt("dentre as opções qual é o tipo\n* guerreiro\n * mago \n * monge \n * ninja")
+	}
+
+	//declarando o metodo(função associada a um objeto) atacar da classe Heroi
+		atacar() {
+			let ataque = "";
+			if (this.tipo.toLowerCase() === "mago"){
+				ataque = "usou magia";
+			} else if(this.tipo.toLowerCase() === "guerreiro"){
+				ataque = "usou espada";
+			} else if (this.tipo.toLowerCase() === "monge"){
+				ataque = " usou artes marciais";
+			} else if (this.tipo.toLowerCase() === "ninja"){
+				ataque = "usou o shuriken";
+			} else {
+				ataque = "um tipo de personagem não listado!"; 
+			}
+			alert(`o ${this.tipo} atacou usando ${ataque}`);
+		}s
+	
+	}
+//Então, ao criar uma instância da classe, você está criando um objeto específico que representa um herói no seu código, e você pode manipular esse objeto atribuindo valores às suas propriedades e chamando seus métodos.
+	let heroi = new Heroi();
+	heroi.atacar();
+
+
+
+
+
+</script>
